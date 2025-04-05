@@ -1,0 +1,20 @@
+body{
+    background: url(assets/project.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+h1{
+    color: chartreuse;
+    text-align: center;
+    font-size: 300%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-size: 200%;
+    color: rgb(255, 0, 0);
+}
+.tags{
+    background-color: aqua;
+    text-align: center;
+    margin-right: 10%;
+}

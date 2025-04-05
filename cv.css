@@ -1,0 +1,39 @@
+/* Base Styles */
+body {
+    background-color: rgb(206, 216, 224);
+    background-repeat: no-repeat;
+    margin-left: 5%; /* Flexible margins for smaller screens */
+    margin-right: 5%;
+    padding: 0; /* Use consistent padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect total width */
+}
+
+/* Center the heading across all screens */
+h3 {
+    text-align: center;
+    font-size: 1.5rem; /* Use rem units for scalable text */
+    margin: 1rem 0; /* Add spacing for visual separation */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        margin-left: 2%; /* Reduce margins for smaller screens */
+        margin-right: 2%;
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Adjust heading size for smaller screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        margin-left: 10%; /* Increase margins for larger screens */
+        margin-right: 10%;
+    }
+
+    h3 {
+        font-size: 2rem; /* Enhance heading size for larger screens */
+    }
+}

@@ -1,0 +1,85 @@
+/* Base Styles */
+body {
+    background: url(assets/home.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the background scales proportionally */
+    background-position: center; /* Centers the background image */
+    background-color: aqua;
+    margin: 0; /* Removes extra spacing */
+    padding: 0; /* Keeps layout consistent */
+}
+
+.zero {
+    margin-top: 5%;
+    margin-left: 10%; /* Reduced margins for better adaptability */
+    margin-right: 10%;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 2%; /* Adds padding for better spacing */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+.one {
+    text-align: center;
+}
+
+.two {
+    color: rgb(0, 255, 60);
+    font-size: 3rem; /* Scalable font size */
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.three {
+    float: right; /* Adjust float for better compatibility */
+    background-color: bisque;
+    padding: 1%; /* Adds padding for spacing */
+    width: auto; /* Adapts to content size */
+}
+
+.four {
+    float: left; /* Adjust float for better compatibility */
+    background-color: azure;
+    padding: 1%; /* Adds padding for spacing */
+    width: auto; /* Adapts to content size */
+}
+
+.add {
+    text-align: center;
+    color: coral;
+    font-size: 1.5rem; /* Scalable font size */
+}
+
+.last {
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .zero {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 5%;
+    }
+
+    .two {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    .add {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .zero {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 3%;
+    }
+
+    .two {
+        font-size: 4rem; /* Increase font size for larger screens */
+    }
+}

@@ -1,0 +1,54 @@
+/* Base Styles */
+body {
+    background: url(assets/about.jpg);
+    text-align: center;
+    background-size: cover; /* Cover ensures the image scales proportionally */
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the background image */
+    margin: 0; /* Removes any margin for consistent layout */
+    padding: 0; /* Ensures no extra space is added */
+}
+
+.me {
+    margin: auto;
+    padding: 2%; /* Use percentages for flexible padding */
+    width: 80%; /* Make the width responsive */
+    max-width: 400px; /* Add a maximum width for larger screens */
+    border: 3px solid;
+    border-color: darkblue;
+    border-style: double;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.jose:hover {
+    position: absolute;
+    top: 5%; /* Use percentages for responsiveness */
+    left: 2%; /* Use percentages for responsiveness */
+    transform: rotate(10deg);
+    z-index: 1000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .me {
+        width: 90%; /* Reduce width for smaller screens */
+        padding: 5%; /* Increase padding for breathing room */
+    }
+
+    .jose:hover {
+        top: 10%; /* Adjust position for smaller screens */
+        left: 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .me {
+        width: 60%; /* Increase width for larger screens */
+        max-width: 600px; /* Adjust max-width */
+    }
+
+    .jose:hover {
+        top: 3%; /* Fine-tune for bigger screens */
+        left: 1%;
+    }
+}
