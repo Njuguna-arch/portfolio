@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Wanja</title>
+    
+    <style>
+        /* Base Styles */
+body {
+    background: url(assets/about.jpg);
+    text-align: center;
+    background-size: cover; /* Cover ensures the image scales proportionally */
+    background-repeat: no-repeat;
+    background-position: center; /* Centers the background image */
+    margin: 0; /* Removes any margin for consistent layout */
+    padding: 0; /* Ensures no extra space is added */
+}
+
+.me {
+    margin: auto;
+    padding: 2%; /* Use percentages for flexible padding */
+    width: 80%; /* Make the width responsive */
+    max-width: 400px; /* Add a maximum width for larger screens */
+    border: 3px solid;
+    border-color: darkblue;
+    border-style: double;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.jose:hover {
+    position: absolute;
+    top: 5%; /* Use percentages for responsiveness */
+    left: 2%; /* Use percentages for responsiveness */
+    transform: rotate(10deg);
+    z-index: 1000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .me {
+        width: 90%; /* Reduce width for smaller screens */
+        padding: 5%; /* Increase padding for breathing room */
+    }
+
+    .jose:hover {
+        top: 10%; /* Adjust position for smaller screens */
+        left: 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .me {
+        width: 60%; /* Increase width for larger screens */
+        max-width: 600px; /* Adjust max-width */
+    }
+
+    .jose:hover {
+        top: 3%; /* Fine-tune for bigger screens */
+        left: 1%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Short biography</h1>
+    <div class="me">
+        <p>Joseph Njuguna was born in Kiambu County, Kenya. <br> He joined primary school in 2009, and passed well. He then joined secondary school, <mark>where He scored a C+</mark> <br>in the KCSE. He was not satisfied by that grade and decided to give it another try. He repeated an scored a B plain of 66 points. <br> He then joined Kirinyaga Uuiversity where He is persuing Bachelor of Science in Software Engineering.</p>
+    </div> <br>
+    <div class="jose">
+        <img src="assets/IMG20250122142711.jpg" alt="Joseph" height="300" width="250">
+    </div> <br>
+    <a href="projects.html">Click to view my projects</a> <br> <br>
+    <a href="home.html">back</a>
+</body>
+</html>
